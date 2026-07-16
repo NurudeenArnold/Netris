@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Netris</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div id="game">
+      <div id="held-box">
+        <h4>Hold</h4>
+        <div id="held"></div>
+      </div>
+      <div id="board"></div>
+      <div id="sidebar">
+        <div id="next-box">
+          <h4>Next</h4>
+          <div id="next"></div>
+        </div>
+        <div id="score">Score: <span id="scoreVal">0</span></div>
+        <div id="controls">
+          <h4>Controls</h4>
+          <ul>
+            <li>Left / Right: Arrow ← →</li>
+            <li>Soft drop: Arrow ↓</li>
+            <li>Hard drop: Space</li>
+            <li>Rotate: Up / X</li>
+            <li>Rotate CCW: Z</li>
+            <li>Hold: LShift</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
