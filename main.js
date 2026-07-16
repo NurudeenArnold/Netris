@@ -521,7 +521,7 @@ for (const k of upKeys) {
 document.addEventListener('keydown', (e)=>{
   if(!current) return;
   const key = e.key.toLowerCase();
-  if ((key === 'z' || key === 'x' || key === 'arrowup') && e.repeat) {
+  if ((key === 'z' || key === 'x' || key === 'arrowup' || key === ' ') && e.repeat) {
     e.preventDefault();
     return;
   }
