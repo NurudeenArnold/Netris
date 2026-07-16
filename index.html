@@ -1,40 +1,102 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Netris</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="app">
-    <div id="game">
+
+<div id="app">
+
+  <div id="game">
+
+    <!-- LEFT -->
+    <div id="left-panel">
+
       <div id="held-box">
         <h4>Hold</h4>
         <div id="held"></div>
       </div>
-      <div id="board"></div>
-      <div id="sidebar">
-        <div id="next-box">
-          <h4>Next</h4>
-          <div id="next"></div>
+
+      <div id="controls">
+        <h4>Controls</h4>
+
+        <div class="control">
+          <span>Move</span>
+          <div class="keys">
+            <kbd>←</kbd>
+            <kbd>→</kbd>
+          </div>
         </div>
-        <div id="score">Score: <span id="scoreVal">0</span></div>
-        <div id="controls">
-          <h4>Controls</h4>
-          <ul>
-            <li>Left / Right: Arrow ← →</li>
-            <li>Soft drop: Arrow ↓</li>
-            <li>Hard drop: Space</li>
-            <li>Rotate: Up / X</li>
-            <li>Rotate CCW: Z</li>
-            <li>Hold: LShift</li>
-          </ul>
+
+        <div class="control">
+          <span>Soft Drop</span>
+          <div class="keys">
+            <kbd>↓</kbd>
+          </div>
         </div>
+
+        <div class="control">
+          <span>Hard Drop</span>
+          <div class="keys">
+            <kbd>Space</kbd>
+          </div>
+        </div>
+
+        <div class="control">
+          <span>Rotate CW</span>
+          <div class="keys">
+            <kbd>X</kbd>
+            <kbd>↑</kbd>
+          </div>
+        </div>
+
+        <div class="control">
+          <span>Rotate CCW</span>
+          <div class="keys">
+            <kbd>Z</kbd>
+          </div>
+        </div>
+
+        <div class="control">
+          <span>Hold</span>
+          <div class="keys">
+            <kbd>Shift</kbd>
+          </div>
+        </div>
+
       </div>
+
     </div>
-    <footer></footer>
+
+    <!-- BOARD -->
+    <div id="board"></div>
+
+    <!-- RIGHT -->
+    <div id="sidebar">
+
+      <div id="next-box">
+        <h4>Next</h4>
+        <div id="next"></div>
+      </div>
+
+    </div>
+
   </div>
-  <script src="main.js"></script>
+
+  <!-- SCORE -->
+  <div id="score-box">
+    <h4>Score</h4>
+    <div id="scoreVal" contenteditable="true">0</div>
+  </div>
+
+  <footer></footer>
+
+</div>
+
+<script src="main.js"></script>
+
 </body>
 </html>
